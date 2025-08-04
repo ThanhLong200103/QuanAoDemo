@@ -8,125 +8,189 @@
 </head>
 <body>
     <header class="modern-header">
-    <div class="header-container">
-      <!-- Logo và thông tin shop -->
-      <div class="header-left">
-        <div class="logo-section">
-          <div class="logo-icon">
-            <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-            </svg>
+      <!-- Top bar -->
+      <div class="top-bar">
+        <div class="container">
+          <div class="top-bar-left">
+            <span>📞 Hotline: 0987 654 321</span>
+            <span>📧 Email: thanhlong@shop.com</span>
           </div>
-          <div class="logo-text">
-    <h1>Thành Long</h1>
-    <p>Shop Thời Trang Quần Áo</p>
+          <div class="top-bar-right">
+            <a href="#" class="top-link">Hỗ trợ</a>
+            <a href="#" class="top-link">Hướng dẫn mua hàng</a>
+            <a href="#" class="top-link">Chính sách đổi trả</a>
           </div>
+        </div>
+      </div>
+
+      <!-- Main header -->
+      <div class="header-container">
+        <!-- Logo section -->
+        <div class="header-left">
+          <div class="logo-section">
+            <div class="logo-icon">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <path d="M25 5L35 15L40 25L35 35L25 45L15 35L10 25L15 15L25 5Z" fill="url(#logoGradient)" stroke="#fff" stroke-width="2"/>
+                <path d="M20 20L25 25L30 20" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <h1>THÀNH LONG</h1>
+              <p>FASHION STORE</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search section -->
+        <div class="header-center">
+          <div class="search-container">
+            <div class="search-bar">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" class="search-icon">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+              </svg>
+              <input type="text" placeholder="Tìm kiếm sản phẩm, thương hiệu..." id="headerSearch">
+              <button class="search-btn" title="Tìm kiếm">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+              </button>
+              <button class="clear-search-btn" id="clearSearch" title="Xóa tìm kiếm" style="display: none;">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="search-suggestions">
+              <span class="suggestion-tag">Áo thun nam</span>
+              <span class="suggestion-tag">Quần jean nữ</span>
+              <span class="suggestion-tag">Váy đẹp</span>
+              <span class="suggestion-tag">Giày sneaker</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- User actions -->
+        <div class="header-right">
+          <div class="user-actions">
+            <!-- Hotline -->
+            <div class="action-item hotline-item">
+              <div class="action-icon hotline-icon">
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+              </div>
+              <div class="action-text">
+                <span class="action-label">Hotline</span>
+                <span class="action-value">0987 654 321</span>
+              </div>
+            </div>
+
+            <!-- Wishlist -->
+            <div class="action-item" onclick="toggleWishlist()">
+              <div class="action-icon">
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                <span class="badge" id="wishlistCount">0</span>
+              </div>
+              <span class="action-text">Yêu thích</span>
+            </div>
+
+            <!-- Cart -->
+            <div class="action-item cart-item" onclick="toggleCart()">
+              <div class="action-icon">
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm1.334-2.75l1.666-7.5A1 1 0 0 0 19 6H6.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44A1.992 1.992 0 0 0 5 19c0 1.104.896 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03zM6.16 8h11.25l-1.25 5.5H7.42L6.16 8z"/>
+                </svg>
+                <span class="badge" id="cartCount">0</span>
+              </div>
+              <span class="action-text">Giỏ hàng</span>
+            </div>
+
+            <!-- User menu -->
+            <div class="action-item user-menu" onclick="toggleUserMenu()">
+              <div class="user-avatar">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=40&q=80" alt="User">
+              </div>
+              <span class="action-text">Tài khoản</span>
+              <div class="user-dropdown" id="userDropdown">
+                <div class="dropdown-item" onclick="showProfile()">
+                  <span>👤</span>
+                  <span>Thông tin cá nhân</span>
+                </div>
+                <div class="dropdown-item" onclick="showOrders()">
+                  <span>📦</span>
+                  <span>Đơn hàng của tôi</span>
+                </div>
+                <div class="dropdown-item" onclick="showWishlist()">
+                  <span>❤️</span>
+                  <span>Sản phẩm yêu thích</span>
+                </div>
+                <div class="dropdown-item" onclick="showAddresses()">
+                  <span>📍</span>
+                  <span>Địa chỉ giao hàng</span>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item logout" onclick="logout()">
+                  <span>🚪</span>
+                  <span>Đăng xuất</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile menu toggle -->
+          <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
 
       <!-- Navigation menu -->
       <nav class="header-nav">
-        <a href="#home" class="nav-link active">
-          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-          </svg>
-          Trang chủ
-        </a>
-        <a href="#products" class="nav-link">
-          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
-          </svg>
-          Sản phẩm
-        </a>
-        <a href="#about" class="nav-link">
-          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-          </svg>
-          Giới thiệu
-        </a>
-        <a href="#contact" class="nav-link">
-          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-          </svg>
-          Liên hệ
-        </a>
+        <div class="container">
+          <div class="nav-menu">
+            <a href="#home" class="nav-link active">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              </svg>
+              Trang chủ
+            </a>
+            <a href="#products" class="nav-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+              </svg>
+              Sản phẩm
+            </a>
+            <a href="#about" class="nav-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+              Giới thiệu
+            </a>
+            <a href="#contact" class="nav-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              Liên hệ
+            </a>
+            <a href="#sale" class="nav-link sale-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              Khuyến mãi
+            </a>
+          </div>
+        </div>
       </nav>
-
-      <!-- Header actions -->
-      <div class="header-actions">
-        <!-- Search bar -->
-        <div class="search-bar">
-          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" class="search-icon">
-            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-          </svg>
-          <input type="text" placeholder="Tìm kiếm sản phẩm..." id="headerSearch">
-          <button class="search-btn">Tìm</button>
-        </div>
-
-        <!-- User actions -->
-        <div class="user-actions">
-          <!-- Cart -->
-          <div class="action-item cart-item" onclick="toggleCart()">
-            <div class="action-icon">
-              <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm1.334-2.75l1.666-7.5A1 1 0 0 0 19 6H6.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44A1.992 1.992 0 0 0 5 19c0 1.104.896 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03zM6.16 8h11.25l-1.25 5.5H7.42L6.16 8z"/>
-              </svg>
-              <span class="badge" id="cartCount">0</span>
-            </div>
-            <span class="action-text">Giỏ hàng</span>
-          </div>
-
-          <!-- Wishlist -->
-          <div class="action-item" onclick="toggleWishlist()">
-            <div class="action-icon">
-              <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-              </svg>
-              <span class="badge" id="wishlistCount">0</span>
-            </div>
-            <span class="action-text">Yêu thích</span>
-          </div>
-
-          <!-- User menu -->
-          <div class="action-item user-menu" onclick="toggleUserMenu()">
-            <div class="user-avatar">
-              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=40&q=80" alt="User">
-            </div>
-            <span class="action-text">Tài khoản</span>
-            <div class="user-dropdown" id="userDropdown">
-              <div class="dropdown-item" onclick="showProfile()">
-                <span>👤</span>
-                <span>Thông tin cá nhân</span>
-              </div>
-              <div class="dropdown-item" onclick="showOrders()">
-                <span>📦</span>
-                <span>Đơn hàng của tôi</span>
-              </div>
-              <div class="dropdown-item" onclick="showWishlist()">
-                <span>❤️</span>
-                <span>Sản phẩm yêu thích</span>
-              </div>
-              <div class="dropdown-item" onclick="showAddresses()">
-                <span>📍</span>
-                <span>Địa chỉ giao hàng</span>
-              </div>
-              <div class="dropdown-divider"></div>
-              <div class="dropdown-item logout" onclick="logout()">
-                <span>🚪</span>
-                <span>Đăng xuất</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mobile menu toggle -->
-        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </div>
 
     <!-- Mobile menu -->
     <div class="mobile-menu" id="mobileMenu">
@@ -231,35 +295,55 @@
           <div class="product-price">
             <span class="current-price">120.000đ</span>
             <span class="old-price">150.000đ</span>
-        </div>
+          </div>
           <div class="product-actions">
             <button onclick="addToCart('Áo thun nam basic', 120000, 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
             <button onclick="addToWishlist('Áo thun nam basic');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
           </div>
         </div>
-        <div class="product" data-category="quan nu" onclick="showProductDetail('Quần jean nữ cá tính', 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80', 'Quần jean nữ form Hàn Quốc, trẻ trung, năng động.', '250.000đ')">
+        <div class="product" data-category="quan nu" data-price="250000" onclick="showProductDetail('Quần jean nữ cá tính', 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80', 'Quần jean nữ form Hàn Quốc, trẻ trung, năng động.', '250.000đ')">
           <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Quần jean nữ cá tính">
           <h3>Quần jean nữ cá tính</h3>
-          <p>Giá: 250.000đ</p>
-          <button onclick="addToCart('Quần jean nữ cá tính', 250000, 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+          <div class="product-price">
+            <span class="current-price">250.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Quần jean nữ cá tính', 250000, 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Quần jean nữ cá tính');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
         </div>
-        <div class="product" onclick="showProductDetail('Áo sơ mi trắng nam', 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80', 'Áo sơ mi trắng nam lịch sự, phù hợp công sở.', '200.000đ')">
+        <div class="product" data-category="ao nam" data-price="200000" onclick="showProductDetail('Áo sơ mi trắng nam', 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80', 'Áo sơ mi trắng nam lịch sự, phù hợp công sở.', '200.000đ')">
           <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" alt="Áo sơ mi trắng nam">
           <h3>Áo sơ mi trắng nam</h3>
-          <p>Giá: 200.000đ</p>
-          <button onclick="addToCart('Áo sơ mi trắng nam', 200000, 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+          <div class="product-price">
+            <span class="current-price">200.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Áo sơ mi trắng nam', 200000, 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Áo sơ mi trắng nam');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
         </div>
-        <div class="product" data-category="vay nu" onclick="showProductDetail('Váy hoa nữ dịu dàng', 'https://images.unsplash.com/photo-1469398715555-76331a6c7fa0?auto=format&fit=crop&w=400&q=80', 'Váy hoa nữ chất liệu voan, nhẹ nhàng, nữ tính.', '300.000đ')">
+        <div class="product" data-category="vay nu" data-price="300000" onclick="showProductDetail('Váy hoa nữ dịu dàng', 'https://images.unsplash.com/photo-1469398715555-76331a6c7fa0?auto=format&fit=crop&w=400&q=80', 'Váy hoa nữ chất liệu voan, nhẹ nhàng, nữ tính.', '300.000đ')">
           <img src="https://images.unsplash.com/photo-1469398715555-76331a6c7fa0?auto=format&fit=crop&w=400&q=80" alt="Váy hoa nữ dịu dàng">
           <h3>Váy hoa nữ dịu dàng</h3>
-          <p>Giá: 300.000đ</p>
-          <button onclick="addToCart('Váy hoa nữ dịu dàng', 300000, 'https://images.unsplash.com/photo-1469398715555-76331a6c7fa0?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+          <div class="product-price">
+            <span class="current-price">300.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Váy hoa nữ dịu dàng', 300000, 'https://images.unsplash.com/photo-1469398715555-76331a6c7fa0?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Váy hoa nữ dịu dàng');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
         </div>
-        <div class="product" data-category="khoac nam" onclick="showProductDetail('Áo khoác bomber nam', 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80', 'Áo khoác bomber nam cá tính, giữ ấm tốt.', '350.000đ')">
+        <div class="product" data-category="khoac nam" data-price="350000" onclick="showProductDetail('Áo khoác bomber nam', 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80', 'Áo khoác bomber nam cá tính, giữ ấm tốt.', '350.000đ')">
           <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Áo khoác bomber nam">
           <h3>Áo khoác bomber nam</h3>
-          <p>Giá: 350.000đ</p>
-          <button onclick="addToCart('Áo khoác bomber nam', 350000, 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+          <div class="product-price">
+            <span class="current-price">350.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Áo khoác bomber nam', 350000, 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Áo khoác bomber nam');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
         </div>
         <div class="product" onclick="showProductDetail('Chân váy xếp ly nữ', 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80', 'Chân váy xếp ly nữ trẻ trung, dễ phối đồ.', '220.000đ')">
           <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80" alt="Chân váy xếp ly nữ">
@@ -467,11 +551,311 @@
           <p>Giá: 230.000đ</p>
           <button onclick="addToCart('Áo khoác len nữ', 230000, 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
         </div>
-        <div class="product" onclick="showProductDetail('Váy body nữ', 'https://images.unsplash.com/photo-1469398715555-76331a6c7fa0?auto=format&fit=crop&w=400&q=80', 'Váy body nữ tôn dáng.', '370.000đ')">
+        <div class="product" data-category="vay nu" data-price="370000" onclick="showProductDetail('Váy body nữ', 'https://images.unsplash.com/photo-1469398715555-76331a6c7fa0?auto=format&fit=crop&w=400&q=80', 'Váy body nữ tôn dáng.', '370.000đ')">
           <img src="https://images.unsplash.com/photo-1469398715555-76331a6c7fa0?auto=format&fit=crop&w=400&q=80" alt="Váy body nữ">
           <h3>Váy body nữ</h3>
-          <p>Giá: 370.000đ</p>
-          <button onclick="addToCart('Váy body nữ', 370000, 'https://images.unsplash.com/photo-1469398715555-76331a6c7fa0?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+          <div class="product-price">
+            <span class="current-price">370.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Váy body nữ', 370000, 'https://images.unsplash.com/photo-1469398715555-76331a6c7fa0?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Váy body nữ');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <!-- Thêm sản phẩm mới -->
+        <div class="product" data-category="ao nu" data-price="180000" data-sale="true" onclick="showProductDetail('Áo blazer nữ công sở', 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80', 'Áo blazer nữ công sở thanh lịch, phù hợp môi trường văn phòng.', '220.000đ', '180.000đ', '18%')">
+          <div class="product-badge sale">-18%</div>
+          <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80" alt="Áo blazer nữ công sở">
+          <h3>Áo blazer nữ công sở</h3>
+          <div class="product-price">
+            <span class="current-price">180.000đ</span>
+            <span class="old-price">220.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Áo blazer nữ công sở', 180000, 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Áo blazer nữ công sở');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="quan nam" data-price="280000" onclick="showProductDetail('Quần tây nam cao cấp', 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=400&q=80', 'Quần tây nam cao cấp, form slim fit, phù hợp công sở.', '280.000đ')">
+          <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=400&q=80" alt="Quần tây nam cao cấp">
+          <h3>Quần tây nam cao cấp</h3>
+          <div class="product-price">
+            <span class="current-price">280.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Quần tây nam cao cấp', 280000, 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Quần tây nam cao cấp');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="ao nu" data-price="160000" onclick="showProductDetail('Áo len nữ cổ lọ', 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=400&q=80', 'Áo len nữ cổ lọ ấm áp, thời trang mùa đông.', '160.000đ')">
+          <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=400&q=80" alt="Áo len nữ cổ lọ">
+          <h3>Áo len nữ cổ lọ</h3>
+          <div class="product-price">
+            <span class="current-price">160.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Áo len nữ cổ lọ', 160000, 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Áo len nữ cổ lọ');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="khoac nam" data-price="450000" data-sale="true" onclick="showProductDetail('Áo khoác bomber nam', 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=400&q=80', 'Áo khoác bomber nam thời trang, giữ ấm tốt.', '550.000đ', '450.000đ', '18%')">
+          <div class="product-badge sale">-18%</div>
+          <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=400&q=80" alt="Áo khoác bomber nam">
+          <h3>Áo khoác bomber nam</h3>
+          <div class="product-price">
+            <span class="current-price">450.000đ</span>
+            <span class="old-price">550.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Áo khoác bomber nam', 450000, 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Áo khoác bomber nam');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="vay nu" data-price="420000" onclick="showProductDetail('Váy dạ hội sang trọng', 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=400&q=80', 'Váy dạ hội sang trọng, phù hợp dự tiệc, sự kiện.', '420.000đ')">
+          <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=400&q=80" alt="Váy dạ hội sang trọng">
+          <h3>Váy dạ hội sang trọng</h3>
+          <div class="product-price">
+            <span class="current-price">420.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Váy dạ hội sang trọng', 420000, 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Váy dạ hội sang trọng');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="ao nam" data-price="190000" onclick="showProductDetail('Áo polo nam thể thao', 'https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?auto=format&fit=crop&w=400&q=80', 'Áo polo nam thể thao, thoải mái vận động.', '190.000đ')">
+          <img src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?auto=format&fit=crop&w=400&q=80" alt="Áo polo nam thể thao">
+          <h3>Áo polo nam thể thao</h3>
+          <div class="product-price">
+            <span class="current-price">190.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Áo polo nam thể thao', 190000, 'https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Áo polo nam thể thao');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="quan nu" data-price="140000" onclick="showProductDetail('Quần legging nữ yoga', 'https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?auto=format&fit=crop&w=400&q=80', 'Quần legging nữ yoga, co giãn tốt, thoải mái tập luyện.', '140.000đ')">
+          <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?auto=format&fit=crop&w=400&q=80" alt="Quần legging nữ yoga">
+          <h3>Quần legging nữ yoga</h3>
+          <div class="product-price">
+            <span class="current-price">140.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Quần legging nữ yoga', 140000, 'https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Quần legging nữ yoga');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="khoac nu" data-price="380000" onclick="showProductDetail('Áo khoác denim nữ', 'https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=400&q=80', 'Áo khoác denim nữ thời trang, phong cách Hàn Quốc.', '380.000đ')">
+          <img src="https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=400&q=80" alt="Áo khoác denim nữ">
+          <h3>Áo khoác denim nữ</h3>
+          <div class="product-price">
+            <span class="current-price">380.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Áo khoác denim nữ', 380000, 'https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Áo khoác denim nữ');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="phukien" data-price="120000" onclick="showProductDetail('Túi xách nữ mini', 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=400&q=80', 'Túi xách nữ mini xinh xắn, phù hợp đi chơi.', '120.000đ')">
+          <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=400&q=80" alt="Túi xách nữ mini">
+          <h3>Túi xách nữ mini</h3>
+          <div class="product-price">
+            <span class="current-price">120.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Túi xách nữ mini', 120000, 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Túi xách nữ mini');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="phukien" data-price="250000" data-sale="true" onclick="showProductDetail('Giày sneaker nữ', 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=400&q=80', 'Giày sneaker nữ thể thao, thoải mái vận động.', '300.000đ', '250.000đ', '17%')">
+          <div class="product-badge sale">-17%</div>
+          <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=400&q=80" alt="Giày sneaker nữ">
+          <h3>Giày sneaker nữ</h3>
+          <div class="product-price">
+            <span class="current-price">250.000đ</span>
+            <span class="old-price">300.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Giày sneaker nữ', 250000, 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Giày sneaker nữ');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="phukien" data-price="180000" onclick="showProductDetail('Đồng hồ nam dây da', 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=400&q=80', 'Đồng hồ nam dây da lịch lãm, phù hợp công sở.', '180.000đ')">
+          <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=400&q=80" alt="Đồng hồ nam dây da">
+          <h3>Đồng hồ nam dây da</h3>
+          <div class="product-price">
+            <span class="current-price">180.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Đồng hồ nam dây da', 180000, 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Đồng hồ nam dây da');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="phukien" data-price="90000" onclick="showProductDetail('Kính mát thời trang', 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=400&q=80', 'Kính mát thời trang, bảo vệ mắt tốt.', '90.000đ')">
+          <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=400&q=80" alt="Kính mát thời trang">
+          <h3>Kính mát thời trang</h3>
+          <div class="product-price">
+            <span class="current-price">90.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Kính mát thời trang', 90000, 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Kính mát thời trang');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="phukien" data-price="150000" onclick="showProductDetail('Ví nữ cầm tay', 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=400&q=80', 'Ví nữ cầm tay xinh xắn, phù hợp dự tiệc.', '150.000đ')">
+          <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=400&q=80" alt="Ví nữ cầm tay">
+          <h3>Ví nữ cầm tay</h3>
+          <div class="product-price">
+            <span class="current-price">150.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Ví nữ cầm tay', 150000, 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Ví nữ cầm tay');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="phukien" data-price="80000" onclick="showProductDetail('Tất nam nữ cotton', 'https://images.unsplash.com/photo-1586350977771-b3d0ae9c7187?auto=format&fit=crop&w=400&q=80', 'Tất nam nữ cotton mềm mại, thoáng mát.', '80.000đ')">
+          <img src="https://images.unsplash.com/photo-1586350977771-b3d0ae9c7187?auto=format&fit=crop&w=400&q=80" alt="Tất nam nữ cotton">
+          <h3>Tất nam nữ cotton</h3>
+          <div class="product-price">
+            <span class="current-price">80.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Tất nam nữ cotton', 80000, 'https://images.unsplash.com/photo-1586350977771-b3d0ae9c7187?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Tất nam nữ cotton');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="phukien" data-price="200000" onclick="showProductDetail('Khăn quàng cổ len', 'https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?auto=format&fit=crop&w=400&q=80', 'Khăn quàng cổ len ấm áp, thời trang.', '200.000đ')">
+          <img src="https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?auto=format&fit=crop&w=400&q=80" alt="Khăn quàng cổ len">
+          <h3>Khăn quàng cổ len</h3>
+          <div class="product-price">
+            <span class="current-price">200.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Khăn quàng cổ len', 200000, 'https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Khăn quàng cổ len');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="phukien" data-price="250000" onclick="showProductDetail('Găng tay da nam', 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=400&q=80', 'Găng tay da nam lịch lãm, giữ ấm tốt.', '250.000đ')">
+          <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=400&q=80" alt="Găng tay da nam">
+          <h3>Găng tay da nam</h3>
+          <div class="product-price">
+            <span class="current-price">250.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Găng tay da nam', 250000, 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Găng tay da nam');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="phukien" data-price="320000" onclick="showProductDetail('Nón bảo hiểm thời trang', 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=400&q=80', 'Nón bảo hiểm thời trang, an toàn khi lái xe.', '320.000đ')">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=400&q=80" alt="Nón bảo hiểm thời trang">
+          <h3>Nón bảo hiểm thời trang</h3>
+          <div class="product-price">
+            <span class="current-price">320.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Nón bảo hiểm thời trang', 320000, 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Nón bảo hiểm thời trang');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="phukien" data-price="420000" onclick="showProductDetail('Balo laptop nam nữ', 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=400&q=80', 'Balo laptop nam nữ thời trang, chống nước.', '420.000đ')">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=400&q=80" alt="Balo laptop nam nữ">
+          <h3>Balo laptop nam nữ</h3>
+          <div class="product-price">
+            <span class="current-price">420.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Balo laptop nam nữ', 420000, 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Balo laptop nam nữ');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="phukien" data-price="180000" onclick="showProductDetail('Vòng tay bạc nữ', 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=400&q=80', 'Vòng tay bạc nữ tinh tế, phù hợp mọi trang phục.', '180.000đ')">
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=400&q=80" alt="Vòng tay bạc nữ">
+          <h3>Vòng tay bạc nữ</h3>
+          <div class="product-price">
+            <span class="current-price">180.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Vòng tay bạc nữ', 180000, 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Vòng tay bạc nữ');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="phukien" data-price="350000" onclick="showProductDetail('Dây chuyền vàng nữ', 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=400&q=80', 'Dây chuyền vàng nữ sang trọng, phù hợp dự tiệc.', '350.000đ')">
+          <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=400&q=80" alt="Dây chuyền vàng nữ">
+          <h3>Dây chuyền vàng nữ</h3>
+          <div class="product-price">
+            <span class="current-price">350.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Dây chuyền vàng nữ', 350000, 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Dây chuyền vàng nữ');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="phukien" data-price="120000" onclick="showProductDetail('Bông tai nữ pha lê', 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=400&q=80', 'Bông tai nữ pha lê lấp lánh, nữ tính.', '120.000đ')">
+          <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=400&q=80" alt="Bông tai nữ pha lê">
+          <h3>Bông tai nữ pha lê</h3>
+          <div class="product-price">
+            <span class="current-price">120.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Bông tai nữ pha lê', 120000, 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Bông tai nữ pha lê');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="phukien" data-price="220000" onclick="showProductDetail('Cà vạt nam lụa', 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80', 'Cà vạt nam lụa cao cấp, phù hợp công sở.', '220.000đ')">
+          <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80" alt="Cà vạt nam lụa">
+          <h3>Cà vạt nam lụa</h3>
+          <div class="product-price">
+            <span class="current-price">220.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Cà vạt nam lụa', 220000, 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Cà vạt nam lụa');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="phukien" data-price="90000" onclick="showProductDetail('Nơ cài áo nữ', 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80', 'Nơ cài áo nữ xinh xắn, phù hợp váy công sở.', '90.000đ')">
+          <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80" alt="Nơ cài áo nữ">
+          <h3>Nơ cài áo nữ</h3>
+          <div class="product-price">
+            <span class="current-price">90.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Nơ cài áo nữ', 90000, 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Nơ cài áo nữ');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
+        </div>
+
+        <div class="product" data-category="phukien" data-price="150000" onclick="showProductDetail('Ghim cài áo nam', 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80', 'Ghim cài áo nam lịch lãm, phù hợp sơ mi.', '150.000đ')">
+          <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80" alt="Ghim cài áo nam">
+          <h3>Ghim cài áo nam</h3>
+          <div class="product-price">
+            <span class="current-price">150.000đ</span>
+          </div>
+          <div class="product-actions">
+            <button onclick="addToCart('Ghim cài áo nam', 150000, 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80');event.stopPropagation();" class="add-cart-btn">Thêm vào giỏ</button>
+            <button onclick="addToWishlist('Ghim cài áo nam');event.stopPropagation();" class="wishlist-btn" title="Yêu thích">❤️</button>
+          </div>
         </div>
       </div>
     </section>
@@ -784,6 +1168,9 @@ function addToCart(name, price, img) {
   if(found) found.qty++;
   else cart.push({name, price, img, qty:1});
   setCart(cart);
+  updateCartCount();
+  updateMobileCartCount();
+  showToast('Đã thêm vào giỏ hàng!');
 }
 function updateCartCount() {
   let cart = getCart();
@@ -835,6 +1222,12 @@ window.onload = function() {
   updateCartCount();
   updateWishlistCount();
   
+  // Fix all products structure
+  addWishlistButtonsToAllProducts();
+  
+  // Update mobile cart count
+  updateMobileCartCount();
+  
   // Initialize profile form
   document.getElementById('profileForm').addEventListener('submit', function(e) {
     e.preventDefault();
@@ -849,7 +1242,76 @@ window.onload = function() {
   sizeGuideBtn.style.cssText = 'background:#ff9800;color:white;border:none;padding:8px 16px;border-radius:6px;cursor:pointer;margin-top:10px;';
   sizeGuideBtn.onclick = showSizeGuide;
   productModal.querySelector('.modal-content').appendChild(sizeGuideBtn);
+  
+  // Show success message
+  console.log('✅ Website đã được khởi tạo thành công!');
+  console.log('📦 Tất cả sản phẩm đã có nút yêu thích và thêm vào giỏ hàng');
 };
+
+function updateMobileCartCount() {
+  const cart = getCart();
+  const mobileCartCount = document.getElementById('mobileCartCount');
+  if (mobileCartCount) {
+    mobileCartCount.textContent = cart.length;
+  }
+}
+
+// Function to add wishlist buttons to all products that don't have them
+function addWishlistButtonsToAllProducts() {
+  const products = document.querySelectorAll('.product');
+  
+  products.forEach(product => {
+    // Check if product already has wishlist button
+    const existingWishlistBtn = product.querySelector('.wishlist-btn');
+    if (existingWishlistBtn) return;
+    
+    // Check if product has old structure (p tag for price and single button)
+    const oldPriceTag = product.querySelector('p');
+    const oldButton = product.querySelector('.add-cart-btn');
+    
+    if (oldPriceTag && oldButton) {
+      // Extract product info
+      const productName = product.querySelector('h3').textContent;
+      const priceText = oldPriceTag.textContent.replace('Giá: ', '');
+      const price = parseInt(priceText.replace(/[^\d]/g, ''));
+      const image = product.querySelector('img').src;
+      
+      // Create new structure
+      const newPriceDiv = document.createElement('div');
+      newPriceDiv.className = 'product-price';
+      newPriceDiv.innerHTML = `<span class="current-price">${priceText}</span>`;
+      
+      const newActionsDiv = document.createElement('div');
+      newActionsDiv.className = 'product-actions';
+      
+      // Create new cart button
+      const newCartBtn = document.createElement('button');
+      newCartBtn.className = 'add-cart-btn';
+      newCartBtn.textContent = 'Thêm vào giỏ';
+      newCartBtn.onclick = function(event) {
+        addToCart(productName, price, image);
+        event.stopPropagation();
+      };
+      
+      // Create wishlist button
+      const wishlistBtn = document.createElement('button');
+      wishlistBtn.className = 'wishlist-btn';
+      wishlistBtn.title = 'Yêu thích';
+      wishlistBtn.innerHTML = '❤️';
+      wishlistBtn.onclick = function(event) {
+        addToWishlist(productName);
+        event.stopPropagation();
+      };
+      
+      // Replace old structure with new one
+      newActionsDiv.appendChild(newCartBtn);
+      newActionsDiv.appendChild(wishlistBtn);
+      
+      oldPriceTag.replaceWith(newPriceDiv);
+      oldButton.replaceWith(newActionsDiv);
+    }
+  });
+}
 
 function openChat() {
   renderChat();
@@ -1206,22 +1668,83 @@ document.addEventListener('click', function(event) {
 // Header search functionality
 document.getElementById('headerSearch').addEventListener('keypress', function(event) {
   if (event.key === 'Enter') {
-    const searchTerm = this.value.toLowerCase();
-    const products = document.querySelectorAll('.product');
-    
-    products.forEach(product => {
-      const title = product.querySelector('h3').textContent.toLowerCase();
-      if (title.includes(searchTerm)) {
-        product.style.display = 'block';
-        product.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } else {
-        product.style.display = 'none';
-      }
-    });
-    
-    showToast(`Đã tìm thấy sản phẩm: ${searchTerm}`);
+    performSearch();
   }
 });
+
+// Add click event for search button
+document.querySelector('.search-btn').addEventListener('click', function() {
+  performSearch();
+});
+
+// Add click event for clear search button
+document.getElementById('clearSearch').addEventListener('click', function() {
+  document.getElementById('headerSearch').value = '';
+  clearSearch();
+});
+
+// Add input event for real-time search
+document.getElementById('headerSearch').addEventListener('input', function() {
+  const searchTerm = this.value.trim();
+  const clearBtn = document.getElementById('clearSearch');
+  
+  if (searchTerm.length > 0) {
+    clearBtn.style.display = 'flex';
+  } else {
+    clearBtn.style.display = 'none';
+  }
+});
+
+// Add click events for suggestion tags
+document.querySelectorAll('.suggestion-tag').forEach(tag => {
+  tag.addEventListener('click', function() {
+    document.getElementById('headerSearch').value = this.textContent;
+    performSearch();
+  });
+});
+
+function performSearch() {
+  const searchTerm = document.getElementById('headerSearch').value.toLowerCase().trim();
+  const products = document.querySelectorAll('.product');
+  let foundCount = 0;
+  
+  if (searchTerm === '') {
+    clearSearch();
+    return;
+  }
+  
+  products.forEach(product => {
+    const title = product.querySelector('h3').textContent.toLowerCase();
+    const category = product.getAttribute('data-category') || '';
+    
+    if (title.includes(searchTerm) || category.includes(searchTerm)) {
+      product.style.display = 'block';
+      foundCount++;
+    } else {
+      product.style.display = 'none';
+    }
+  });
+  
+  if (foundCount > 0) {
+    showToast(`Tìm thấy ${foundCount} sản phẩm cho "${searchTerm}"`);
+    // Scroll to first found product
+    const firstFound = document.querySelector('.product[style*="block"]');
+    if (firstFound) {
+      firstFound.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  } else {
+    showToast(`Không tìm thấy sản phẩm nào cho "${searchTerm}"`);
+  }
+}
+
+function clearSearch() {
+  const products = document.querySelectorAll('.product');
+  products.forEach(product => {
+    product.style.display = 'block';
+  });
+  document.getElementById('clearSearch').style.display = 'none';
+  showToast('Hiển thị tất cả sản phẩm');
+}
 
 // Wishlist functionality
 function getWishlist() {
@@ -1459,198 +1982,5 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-
-
-.wishlist-btn.active {
-  background: #e74c3c;
-  color: white;
-  border-color: #e74c3c;
-}
-
-/* Form styles */
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 500;
-  color: #333;
-}
-
-.form-group input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-.save-btn {
-  background: #2d8cf0;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-  width: 100%;
-}
-
-.save-btn:hover {
-  background: #1766b3;
-}
-
-/* Order styles */
-.order-item {
-  border: 1px solid #eee;
-  border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 15px;
-}
-
-.order-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-
-.order-status {
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.order-status.success {
-  background: #52c41a;
-  color: white;
-}
-
-.order-product {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 0;
-}
-
-.order-product img {
-  width: 50px;
-  height: 50px;
-  border-radius: 4px;
-  object-fit: cover;
-}
-
-.order-total {
-  text-align: right;
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 1px solid #eee;
-}
-
-/* Address styles */
-.address-item {
-  border: 1px solid #eee;
-  border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.address-info strong {
-  display: block;
-  margin-bottom: 5px;
-  color: #333;
-}
-
-.address-info p {
-  margin: 2px 0;
-  color: #666;
-}
-
-.address-actions {
-  display: flex;
-  gap: 8px;
-}
-
-.edit-btn, .delete-btn {
-  padding: 6px 12px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.9rem;
-}
-
-.edit-btn {
-  background: #2d8cf0;
-  color: white;
-}
-
-.delete-btn {
-  background: #ff4d4f;
-  color: white;
-}
-
-.add-address-btn {
-  background: #52c41a;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-  width: 100%;
-  margin-top: 15px;
-}
-
-/* Size guide styles */
-.size-tabs {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.size-tab {
-  padding: 10px 20px;
-  border: 1px solid #ddd;
-  background: white;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.size-tab.active {
-  background: #2d8cf0;
-  color: white;
-  border-color: #2d8cf0;
-}
-
-.size-table {
-  overflow-x: auto;
-}
-
-.size-table table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.size-table th,
-.size-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
-}
-
-.size-table th {
-  background: #f8f9fa;
-  font-weight: bold;
-}
-</style>
 </body>
 </html> 
