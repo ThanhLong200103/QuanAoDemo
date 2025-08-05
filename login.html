@@ -11,8 +11,8 @@
     <!-- Left side - Branding -->
     <div class="auth-left">
       <div class="auth-left-content">
+         <div class="logo-icon">👕</div>
         <div class="logo-section">
-          <div class="logo-icon">👕</div>
           <h1>Thành Long</h1>
           <p>Shop Thời Trang Quần Áo</p>
         </div>
@@ -112,15 +112,23 @@
               <input type="email" id="registerEmail" name="email" required>
             </div>
             
-            <div class="form-group">
-              <label for="registerPhone">Số điện thoại</label>
-              <input type="tel" id="registerPhone" name="phone" required>
+          <!-- Sidebar Demo Accounts (Hamburger) -->
+          <div class="sidebar-demo">
+            <div class="hamburger" onclick="toggleSidebarDemo()">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            
-            <div class="form-group">
-              <label for="registerUsername">Tên đăng nhập</label>
-              <input type="text" id="registerUsername" name="username" required>
+            <div class="sidebar-content" id="sidebarDemoContent">
+              <h4>🔑 Tài khoản demo:</h4>
+              <p><strong>Admin:</strong> admin / 123456</p>
+              <p><strong>Khách hàng:</strong> user / 123456</p>
+              <div class="demo-buttons">
+                <button class="demo-btn" onclick="fillDemoAccount('admin', '123456')">Admin</button>
+                <button class="demo-btn" onclick="fillDemoAccount('user', '123456')">User</button>
+              </div>
             </div>
+          </div>
             
             <div class="form-group">
               <label for="registerPassword">Mật khẩu</label>
@@ -143,6 +151,11 @@
   </div>
 
   <script>
+    // Sidebar demo toggle
+    function toggleSidebarDemo() {
+      const sidebar = document.getElementById('sidebarDemoContent');
+      sidebar.classList.toggle('active');
+    }
     // Kiểm tra nếu đã đăng nhập thì chuyển về trang chủ
     if(localStorage.getItem('isLoggedIn') === 'true') {
       window.location.href = 'index.html';
